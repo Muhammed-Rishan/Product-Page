@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product_Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+    <div class="container">
+        <div class="product">
+            <div class="shirt">
+                <img src="media/img1.jpg" alt="" id="Mainimg">
+            </div>
+            <div class="description">
+                <h1>Men's Fashion Tshirt</h1>
+                <h2 id="price"></h2>
+                <p>Keep calm and css on t shirt spoof for programmers</p>
+                <form>
+   
+                <div class="color">
+                    <p>Color</p>
+                 <label for="red">
+                    <input type="radio" name="clr" id="red" class="colors" data-id="red" value="red" onchange="clrchange(this.value);">
+                    <span class="color1"></span>
+                 </label>
+                 <label for="green">
+                    <input type="radio" name="clr" id="green" class="colors" value="green" onchange="clrchange(this.value);">
+                    <span class="color2"></span>
+                 </label>
+                 <label for="blue">
+                    <input type="radio" name="clr" id="blue" class="colors" value="blue" onchange="clrchange(this.value);">
+                    <span class="color3"></span>
+                 </label>
+                 <label for="gray">
+                    <input type="radio" name="clr" id="gray" class="colors" value="gray" onchange="clrchange(this.value);">
+                    <span class="color4"></span>
+                 </label>
+                </div>
+                <div class="quantity">
+                    <p>Quantity</p>
+                    <input id="qnt" type="number" min="1" max="7" value="1" onchange="calculate(this.value);">
+                </div>
+
+               <button class="btn">Add to Cart</button>
+            </form>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="container">
+            <div class="summary">
+                <h2 id="summ">Summary :</h2>
+                
+                <img src="" alt="" id="cimg"> 
+            </div>
+            <div class="add">
+            <p id="sprice">Price:</p>
+            </div>
+            <div class="adds">
+                <p id="sqty">Qnt:</p></div>
+            </div>
+            <div class="clrs">
+             <p id="sclr">Color:</p>
+            </div>
+            
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+<!-- <script>
+    var color =  document.getElementsByName('clr');
+    if (color.value == "red")
+    {
+        document.getElementsByClassName('clrs').innerHTML = "red";
+    }
+</script> -->
+ 
